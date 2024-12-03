@@ -1,0 +1,15 @@
+<div class="app-container" >
+  <div class="app-layout">
+    <app-sidebar [hidden]="isSidebarHidden"></app-sidebar>
+    
+    <div class="main-content">
+  <app-navbar (toggleSidebarEvent)="toggleSidebar()"></app-navbar>
+  
+  
+  <div class="dashboard-content">
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  </div>
+  </div>

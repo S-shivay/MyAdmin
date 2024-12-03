@@ -1,0 +1,38 @@
+<nav class="navbar">
+    <button mat-icon-button class="toggle-btn" (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-form-field appearance="outline" class="search-bar">
+        <input type="text" matInput placeholder="Search">
+        <button class="searchicon" mat-icon-button matSuffix><mat-icon>search</mat-icon></button>
+    </mat-form-field>
+
+    <div class="actions">
+        <button mat-icon-button [matMenuTriggerFor]="notificationMenu">
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <mat-menu #notificationMenu="matMenu">
+            <p class="menu-item">New message received</p>
+            <p class="menu-item">System update available</p>
+            <p class="menu-item">Reminder: Meeting at 3 PM</p>
+        </mat-menu>
+        <button mat-icon-button [matMenuTriggerFor]="userMenu">
+            <mat-icon>person</mat-icon>
+        </button>
+        <mat-menu #userMenu="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>vpn_key</mat-icon>
+                  Change Password
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>share</mat-icon>
+                  Share
+                </button>
+                <button mat-menu-item (click)="onLogout()">
+                  <mat-icon>logout</mat-icon>
+                  Logout
+                </button>
+        </mat-menu>
+    </div>
+</nav>

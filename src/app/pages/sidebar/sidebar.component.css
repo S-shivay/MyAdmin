@@ -1,0 +1,45 @@
+.sidenav-container {
+    height: 100vh;
+  }
+  
+  .sidenav {
+    width: 250px;
+    background-color: #f4f4f4;
+  }
+  
+  .profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .img-fluid{
+    height: 50px;
+    width: 100px;
+  }
+  mat-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  mat-nav-list{
+    margin-left: 9px;
+    margin-bottom: -7px;
+  }
+  .mat-line{
+    font-family: Garamond (serif);
+    font-size: 14px;
+    font-weight: 300;
+    vertical-align: middle;
+  }
+  mat-icon {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  mat-expansion-panel{
+    box-shadow: none !important;
+    border-radius: 20px;
+  }
+  
